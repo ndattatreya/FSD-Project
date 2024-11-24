@@ -1,0 +1,79 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light Theme */
+body.light {
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Dark Theme */
+body.dark-theme {
+  background-color: #181818;
+  color: #f1f1f1;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #ffefc2;
+}
+
+body.dark-theme .navbar {
+  background-color: #333;
+  color: white;
+}
+
+body.dark-theme .nav-links a {
+  color: white;
+}
+
+body.dark-theme .nav-links a:hover {
+  background-color: #444;
+}
+
+/* Recipe Cards */
+body.dark-theme .recipe-card {
+  background-color: #333;
+  color: white;
+}
+
+body.dark-theme .recipe-card img {
+  filter: brightness(80%);
+}
+
+/* Search Bar */
+body.dark-theme .search-bar {
+  background-color: #444;
+  color: white;
+  border: 1px solid #666;
+}
+
+/* Styling for Recipe Form */
+.recipe-form {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-theme .recipe-form {
+  background-color: #333;
+  color: white;
+}
+
+body.dark-theme .recipe-form input,
+body.dark-theme .recipe-form textarea {
+  background-color: #444;
+  color: white;
+  border: 1px solid #666;
+}
+
+body.dark-theme .recipe-form button {
+  background-color: #4CAF50;
+  color: white;
+}

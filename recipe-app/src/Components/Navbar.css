@@ -1,0 +1,127 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Light Theme */
+  body.light {
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Dark Theme */
+  body.dark-theme {
+    background-color: #181818;
+    color: #f1f1f1;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    background-color: #ffefc2;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navbar .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar .nav-links a {
+    text-decoration: none;
+    color: rgb(2, 0, 0);
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .navbar .nav-links a:hover {
+    background-color: #fcf0e0;
+  }
+  
+  .navbar .search-bar {
+    width: 200px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    margin-left: 20px;
+  }
+  
+  .navbar .search-bar:focus {
+    outline: none;
+    box-shadow: 0 0 5px #4CAF50;
+  }
+  
+  /* Theme-Specific Adjustments for Navbar */
+  body.dark-theme .navbar {
+    background-color: #333;
+    color: white;
+  }
+  
+  body.dark-theme .nav-links a {
+    color: white;
+  }
+  
+  body.dark-theme .nav-links a:hover {
+    background-color: #444;
+  }
+  
+  body.dark-theme .navbar .search-bar {
+    background-color: #444;
+    color: white;
+    border: 1px solid #666;
+  }
+  
+  /* Home Page Styles */
+  .home h1, .home h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+  body.dark-theme .home h1, body.dark-theme .home h2 {
+    color: white; /* Ensure headings are white in dark theme */
+  }
+  
+  /* Recipe Cards */
+  .recipe-card {
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  body.dark-theme .recipe-card {
+    background-color: #333;
+    color: white;
+  }
+  
+  body.dark-theme .recipe-card img {
+    filter: brightness(80%);
+  }
+  
+  body.dark-theme .recipe-card h2 {
+    color: white;
+  }
+  
+  /* Adjust search bar color in Home component */
+  body.dark-theme .home .search-bar {
+    background-color: #444;
+    color: white;
+    border: 1px solid #666;
+  }
+  
